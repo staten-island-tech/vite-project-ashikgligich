@@ -1,8 +1,8 @@
-import './css/main.css'
-import './css/ash.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import './css/style.module.css'
+import './css/ash.module.css'
+import { ash } from './ash'
+import { menu } from './menu'
+
 
 document.querySelector('#app').innerHTML = `
   <div>
