@@ -10,7 +10,7 @@ body {
     color: aliceblue;
   }
   .top-bar {
-    padding-left: 2vw;
+    padding-left: 1vw;
     padding-top: 1vw;
     width: 98vw;
     background-color: rgb(50, 50, 75);
@@ -92,17 +92,7 @@ body {
   }
   
   
-  .dropbtn {
-    background-color: transparent;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    height: 5vh;
-    width: 5vh;
-    background-image: url(/public/ASH_TEK_logo.png);
-  }
+  
   
   .dropdown {
     position: relative;

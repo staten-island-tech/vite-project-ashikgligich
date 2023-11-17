@@ -82,16 +82,16 @@ const DOMSelectors = {
     );
   }*/
 
-  var button2 = document.querySelector('#button2');
-  button2.addEventListener('click', myFunction);
-
+  var logo = document.getElementById('logo');
+  logo.addEventListener('click', myFunction);
+  
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
   // Close the dropdown if the user clicks outside of it
   window.onclick = function (event) {
-    if (!event.target.matches(".dropbtn")) {
+    if (!event.target.matches("#logo")) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
@@ -102,8 +102,6 @@ const DOMSelectors = {
       }
     }
   };
-  
-
 
 
 
