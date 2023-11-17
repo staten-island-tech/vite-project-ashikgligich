@@ -1,25 +1,40 @@
-import './css/style.module.css'
-import './css/ash.module.css'
-import { ash } from './ash'
-import { menu } from './menu'
+import './ash'
+import { usAirForceJets } from './menu'
 
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
 
-setupCounter(document.querySelector('#counter'))
+
+usAirForceJets.forEach((jet) => {
+  document.querySelector(".flex-container").insertAdjacentHTML(
+    "afterbegin",
+    `<div class="grow" id="grow">
+      <div id="animation1">
+        <img
+          src="someestuff"
+          alt="F44"
+        />
+        <h2>${jet.name}</h2>
+        <h4>${jet.role}</h4>
+        <h6>${jet.maxSpeed,jet.range,jet.payload}</h6>
+        <button type="button" class="delete">Delete</button>
+      </div>
+    </div>`
+  )});
+  
+  var button = document.querySelector('button.delete:not(button.delete[onclick=onButtonClick])');
+  var button = document.querySelector('button.delete:not([onclick=onButtonClick])');
+  button.addEventListener('click', onButtonClick);
+  
+;
+
+
+var button = document.querySelector('button.delete');
+button.addEventListener('click', onButtonClick);
+
+function onButtonClick() {
+  console.log("button click");
+  
+  var granyElement = this.parentNode.parentNode;
+  //var element = document.getElementById("grow");
+  granyElement.remove();
+};

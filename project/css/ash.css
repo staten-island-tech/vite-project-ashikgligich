@@ -93,12 +93,15 @@ body {
   
   
   .dropbtn {
-    background-color: #04aa6d;
+    background-color: transparent;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    height: 5vh;
+    width: 5vh;
+    background-image: url(/public/ASH_TEK_logo.png);
   }
   
   .dropdown {

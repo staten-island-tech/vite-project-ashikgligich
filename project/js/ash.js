@@ -11,7 +11,7 @@ const DOMSelectors = {
   };
   
   console.log(DOMSelectors);
-  
+  /*
   DOMSelectors.form.addEventListener("submit", function (event) {
     event.preventDefault();
     //alert("here");
@@ -60,7 +60,7 @@ const DOMSelectors = {
     granyElement.remove();
   };
   
-  /*function makeGalaxy() {
+  function makeGalaxy() {
   const Galaxy = yes{}
   return Galaxy
   }
@@ -81,6 +81,10 @@ const DOMSelectors = {
   </div>`
     );
   }*/
+
+  var button2 = document.querySelector('#button2');
+  button2.addEventListener('click', myFunction);
+
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -99,4 +103,8 @@ const DOMSelectors = {
     }
   };
   
-  export{ash}
+
+
+
+
+
