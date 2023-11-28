@@ -10,7 +10,7 @@ usAirForceJets.forEach((jet) => {
     `<div class="grow" id="grow">
       <div id="animation1">
         <img
-          src="someestuff"
+          src="${jet.img}"
           alt="F44"
         />
         <h2>${jet.name}</h2>
