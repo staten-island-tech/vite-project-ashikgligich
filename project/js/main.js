@@ -11,7 +11,7 @@ function displayJets(jetz)
       `<div class="grow" id="grow">
         <div id="animation1">
           <img
-            src="${jet.img}"
+            src="${jet.imageUrl}"
             alt="F44"
           />
           <h2>${jet.name}</h2>
