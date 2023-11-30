@@ -119,6 +119,142 @@ var usAirForceJets = [
     payload: "Spy plane with high-altitude capabilities",
     imageUrl: "url_to_u2_image.jpg",
   },
+  {
+    name: "F-15EX Eagle II",
+    role: "Air Superiority Fighter",
+    maxSpeed: "Mach 2.5",
+    range: "3,000 nautical miles",
+    payload: "Advanced avionics and electronic warfare capabilities",
+    imageUrl: ""
+  },
+  {
+    name: "T-7A Red Hawk",
+    role: "Trainer Aircraft",
+    maxSpeed: "Mach 1.2",
+    range: "1,000 nautical miles",
+    payload: "Training capabilities for pilots",
+    imageUrl: ""
+  },
+  {
+    name: "RC-135 Rivet Joint",
+    role: "Reconnaissance Aircraft",
+    maxSpeed: "500 mph",
+    range: "3,900 nautical miles",
+    payload: "Signals intelligence and electronic surveillance",
+    imageUrl: ""
+  },
+  {
+    name: "HC-130J Combat King II",
+    role: "Search and Rescue",
+    maxSpeed: "417 mph",
+    range: "2,500 nautical miles",
+    payload: "Specialized equipment for search and rescue operations",
+    imageUrl: ""
+  },
+  {
+    name: "B-1B Lancer",
+    role: "Strategic Bomber",
+    maxSpeed: "Mach 1.25",
+    range: "5,900 nautical miles",
+    payload: "Large payload of guided and unguided weapons",
+    imageUrl: ""
+  },
+  {
+    name: "B-21 Raider",
+    role: "Stealth Bomber",
+    maxSpeed: "Classified",
+    range: "Classified",
+    payload: "Advanced stealth with nuclear and conventional capabilities",
+    imageUrl: ""
+  },
+  {
+    name: "OV-10 Bronco",
+    role: "Light Attack and Observation Aircraft",
+    maxSpeed: "288 mph",
+    range: "1,240 nautical miles",
+    payload: "Supports ground troops with reconnaissance and close air support",
+    imageUrl: ""
+  },
+  {
+    name: "F-105 Thunderchief",
+    role: "Fighter-Bomber",
+    maxSpeed: "Mach 2.08",
+    range: "2,206 nautical miles",
+    payload: "Designed for high-speed, low-altitude penetration strikes",
+    imageUrl: ""
+  },
+  {
+    name: "F-100 Super Sabre",
+    role: "Fighter Aircraft",
+    maxSpeed: "Mach 1.6",
+    range: "1,995 nautical miles",
+    payload: "First USAF fighter capable of supersonic speed in level flight",
+    imageUrl: ""
+  },
+  {
+    name: "F-4 Phantom II",
+    role: "Interceptor, Fighter-Bomber",
+    maxSpeed: "Mach 2.23",
+    range: "1,610 nautical miles",
+    payload: "Versatile armament including missiles and bombs",
+    imageUrl: ""
+  },
+  {
+    name: "F-5 Freedom Fighter",
+    role: "Light Fighter",
+    maxSpeed: "Mach 1.6",
+    range: "760 nautical miles",
+    payload: "Twin-engine, agile fighter",
+    imageUrl: ""
+  },
+  {
+    name: "C-130 Hercules",
+    role: "Transport Aircraft",
+    maxSpeed: "366 mph",
+    range: "2,360 nautical miles",
+    payload: "Tactical airlift capabilities, versatile cargo hold",
+    imageUrl: ""
+  },
+  {
+    name: "SR-71 Blackbird",
+    role: "Reconnaissance Aircraft",
+    maxSpeed: "Mach 3.3",
+    range: "2,900 nautical miles",
+    payload: "Advanced surveillance and reconnaissance equipment",
+    imageUrl: ""
+  },
+  {
+    name: "C-5 Galaxy",
+    role: "Transport Aircraft",
+    maxSpeed: "Mach 0.79",
+    range: "4,800 nautical miles",
+    payload: "One of the largest military aircraft, extensive cargo capabilities",
+    imageUrl: ""
+  },
+  {
+    name: "F-111 Aardvark",
+    role: "Tactical Bomber",
+    maxSpeed: "Mach 2.5",
+    range: "3,200 nautical miles",
+    payload: "Variable geometry wings, nuclear and conventional payload",
+    imageUrl: ""
+  },
+  {
+    name: "B-58 Hustler",
+    role: "Supersonic Bomber",
+    maxSpeed: "Mach 2",
+    range: "4,100 nautical miles",
+    payload: "First operational bomber capable of Mach 2 flight",
+    imageUrl: ""
+  },
+  {
+    name: "KC-10 Extender",
+    role: "Aerial Tanker",
+    maxSpeed: "Mach 0.89",
+    range: "4,400 nautical miles",
+    payload: "Aerial refueling and cargo transportation capabilities",
+    imageUrl: ""
+  },
 ];
 
 usAirForceJets.forEach((jet) => {
