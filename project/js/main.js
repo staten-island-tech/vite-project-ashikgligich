@@ -40,8 +40,26 @@ function onButtonClick() {
   granyElement.remove();
 };
 
+/*
+var filtbut = document.querySelectorAll('#myDropdown a.filterz');
+filtbut.forEach(one => one.addEventListener('click', mmmm));
 
+function mmmm() {
 
+  console.log("i am here");
+
+ let no = document.querySelector(".flex-container")
+ no.innerHTML = '';
+
+ let filter = this.textContent;
+
+ usAirForceJets.forEach((uh)=> {
+  uh.role.includes  'filter'
+  displayJets(uh)
+ })
+
+}
+*/
 var buts = document.querySelectorAll('#myDropdown a.filterz');
 console.log(buts);
 buts.forEach(item => { item.addEventListener('click', onButtonClick2) });
