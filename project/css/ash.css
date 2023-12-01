@@ -13,9 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --grey:  rgba(75, 75, 100);
+  --grey:   rgba(75, 75, 100);
   --black:  rgb(0, 0, 0, 0.5);
   --green:  #242424;
+  --white:  aliceblue;
+
 }
 
 body {
@@ -148,6 +150,8 @@ body {
   .show {
     display: block;
   }
+
+
   
 
   .light-mode {
