@@ -1,8 +1,4 @@
 
-
-
-
-
 function greet(name) {
 const greetPromise = new Promise(function (resolve, reject) {
     return('hello ${name}');
@@ -29,3 +25,5 @@ async function getData(URL){
     } catch(error){}
 }
 getData(URL);
+
+
