@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --pic: url(/public/comiepropganda.png);
+  --pic: url(/comiepropganda.png);
   --grey: rgb(50, 50, 75);
   --someVar: RED;
 

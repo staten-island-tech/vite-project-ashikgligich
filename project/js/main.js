@@ -17,10 +17,10 @@ modeButton.addEventListener('click', () => {
   var r = document.querySelector(':root'); 
   var rs = getComputedStyle(r);
 
-  if (rs.getPropertyValue('--pic') == "url(/public/comiepropganda.png)")
-    r.style.setProperty('--pic', 'url(/public/2602894.jpg)');
+  if (rs.getPropertyValue('--pic') == "url(/comiepropganda.png)")
+    r.style.setProperty('--pic', 'url(/2602894.jpg)');
   else
-    r.style.setProperty('--pic', 'url(/public/comiepropganda.png)');
+    r.style.setProperty('--pic', 'url(/comiepropganda.png)');
 })
 
 
