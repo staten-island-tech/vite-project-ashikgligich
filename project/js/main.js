@@ -2,6 +2,27 @@ import './ash'
 import { usAirForceJets } from './menu'
 
 
+let modeButton = document.querySelector("#schemaaaaa");
+
+modeButton.addEventListener('click', () => {
+  var r = document.querySelector(':root'); 
+  var rs = getComputedStyle(r);
+
+  if (rs.getPropertyValue('--someVar') == "RED")
+    r.style.setProperty('--someVar', 'green');
+  else
+    r.style.setProperty('--someVar', 'RED');
+})
+modeButton.addEventListener('click', () => {
+  var r = document.querySelector(':root'); 
+  var rs = getComputedStyle(r);
+
+  if (rs.getPropertyValue('--pic') == "url(/public/comiepropganda.png)")
+    r.style.setProperty('--pic', 'url(/public/2602894.jpg)');
+  else
+    r.style.setProperty('--pic', 'url(/public/comiepropganda.png)');
+})
+
 
 function displayJets(jetz)
 {
@@ -74,8 +95,27 @@ function onButtonClick2(){
   var planeTypo = this.innerText; 
   
 
-  var fighterz = usAirForceJets.filter(x => x.role.includes(planeTypo));
+  if (planeTypo == "ALL")
+    fighterz = usAirForceJets
+  else
+    var fighterz = usAirForceJets.filter(x => x.role.includes(planeTypo));
+  
   displayJets(fighterz);
 
 };
+var turt = document.querySelectorAll('#myDropdown b.speed');
+console.log(turt);
+turt.forEach(item => { item.addEventListener('click', onButtonClick3) });
 
+
+function onButtonClick3(){
+  console.log("button f1")
+  var g = document.querySelector(".flex-container")
+  g.innerHTML = '';
+
+var sortjet = Array.from(usAirForceJets.sort((a,b) => a.maxSpeedMph - b.maxSpeedMph));
+console.log(sortjet);
+
+
+displayJets(sortjet);
+};
